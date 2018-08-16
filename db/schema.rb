@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_16_031200) do
+ActiveRecord::Schema.define(version: 2018_08_16_071056) do
 
   create_table "reservations", force: :cascade do |t|
     t.string "booking_code"
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2018_08_16_031200) do
   end
 
   create_table "trains", force: :cascade do |t|
-    t.integer "number"
+    t.string "number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["number"], name: "index_trains_on_number"

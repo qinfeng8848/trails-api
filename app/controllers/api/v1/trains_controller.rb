@@ -6,7 +6,7 @@ class Api::V1::TrainsController < ApiController
       :data => @trains.map{ |train|
         {
           :number => train.number,
-          :train_url => api_v1_train_url(train_number)
+          :train_url => api_v1_train_url(train.number)
         }
       }
     }
