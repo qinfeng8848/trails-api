@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Train.create!(:number => "G533")
+Train.create!(:number => "G519")
+Train.create!(:number => "G503")
+Train.create!(:number => "G587")
